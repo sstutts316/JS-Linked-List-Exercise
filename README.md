@@ -46,6 +46,7 @@ Given a linked list containing numbers, return the average of those numbers.
 
 For example:
 
+```jsx
 graph LR
 	o1(1);
 	2 --> 3;
@@ -54,6 +55,7 @@ graph LR
 	o1 --> 7;
 	7 --> 6;
 	6 --> 9;
+```
 
  would return 4.142857142857143.
 
@@ -76,6 +78,7 @@ It should return a *new* linked list, in sorted order.
 ## **Pivot Around Value**
 
 Imagine we have a singly-linked linked list:
+```jsx
 
 graph LR
 	o1(1);
@@ -85,11 +88,13 @@ graph LR
 	3 --> 9;
 	9 --> 1;
 	1 --> o1;
+```
 
  In this challenge, you’ll be given a value and you want to rearrange the items in the linked list so that all items with data less than the given value are in the first half, and items with greater than or equal to the given value are in the second half.
 
 For example, for the value 5:
 
+```jsx
 graph LR
 	o1(1);
 	2 --> 3;
@@ -98,6 +103,7 @@ graph LR
 	o1 --> 7;
 	7 --> 6;
 	6 --> 9;
+```
 
  Notice that this list *isn’t sorted*; all we need to do is “pivot” it around the given value. Otherwise, items are still in the same order as they were (7 came before 6 in the original list, so it still does — but both of them are greater than 5, so they appear in the second half).
 
