@@ -184,6 +184,7 @@ circ.getByIndex(2)  // hermione
 
 And you can also rotate more than once around the ring:
 
+```jsx
 let circ = new CircularArray()
 circ.addItem('harry')
 circ.addItem('hermione')
@@ -192,9 +193,10 @@ circ.addItem('ron')
 
 circ.rotate(-17)
 circ.getByIndex(1)  // harry
-
+```
 If you add a new item after rotating, it should go at the end of the list in its current rotation:
 
+```jsx
 let circ = new CircularArray()
 circ.addItem('harry')
 circ.addItem('hermione')
@@ -210,3 +212,4 @@ circ.printArray()
 // harry
 // hermione
 // dobby
+```
